@@ -18,6 +18,10 @@ import ContactCTA from './components/ContactCTA';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
 import WhatsAppButton from './components/WhatsAppButton';
+import NewsTicker from './components/NewsTicker';
+import EligibilityWizard from './components/EligibilityWizard';
+import PartnersLogos from './components/PartnersLogos';
+import RoiCalculator from './components/RoiCalculator';
 
 const App: React.FC = () => {
   return (
@@ -26,15 +30,18 @@ const App: React.FC = () => {
       <main className="flex-grow">
         <Hero />
         <Introduction />
+        <NewsTicker />
         <ZesFlow />
         <AboutUs />
         <OperationalMap />
         <TertiaryFocus />
-        {/* SeoSection rimossa come richiesto */}
         <ComparisonTable />
+        <EligibilityWizard />
         <StepsSection />
         <ProjectsGallery />
+        <PartnersLogos />
         <OwnersSection />
+        <RoiCalculator />
         <Testimonials />
         <FAQSection />
         <LeadMagnet />
