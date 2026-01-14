@@ -12,7 +12,7 @@ const AboutUs: React.FC = () => {
             <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-slate-100 rounded-full z-0"></div>
             <img 
               src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" 
-              alt="Team 2D Sviluppo Immobiliare Consulting - Esperti in consulenza strategica ZES Puglia" 
+              alt="Il team di esperti di 2D Sviluppo Immobiliare specializzati in consulenza strategica ZES Puglia" 
               loading="lazy"
               className="relative z-10 rounded-2xl shadow-xl w-full object-cover h-[500px]"
             />
@@ -42,7 +42,7 @@ const AboutUs: React.FC = () => {
                   <Users size={24} aria-hidden="true" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-slate-900">Network Regionale</h4>
+                  <h3 className="font-bold text-slate-900 text-base">Network Regionale</h3>
                   <p className="text-slate-500 text-sm">Relazioni consolidate a Bari, Foggia, Brindisi, Taranto, Lecce e BAT.</p>
                 </div>
               </div>
@@ -52,7 +52,7 @@ const AboutUs: React.FC = () => {
                   <Target size={24} aria-hidden="true" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-slate-900">Focus ZES</h4>
+                  <h3 className="font-bold text-slate-900 text-base">Focus ZES</h3>
                   <p className="text-slate-500 text-sm">Specializzazione verticale sulla normativa ZES Unica per massimizzare i vantaggi fiscali.</p>
                 </div>
               </div>
@@ -62,7 +62,7 @@ const AboutUs: React.FC = () => {
                   <Award size={24} aria-hidden="true" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-slate-900">Affidabilità</h4>
+                  <h3 className="font-bold text-slate-900 text-base">Affidabilità</h3>
                   <p className="text-slate-500 text-sm">Seguiamo il cliente dalla prima stretta di mano fino al rogito notarile.</p>
                 </div>
               </div>

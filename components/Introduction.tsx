@@ -33,7 +33,7 @@ const Introduction: React.FC = () => {
             <div className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden shadow-2xl">
              <img
               src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
-              alt="Uffici moderni e spazi commerciali per il terziario in area ZES Puglia"
+              alt="Uffici moderni e spazi per il business nel terziario avanzato sviluppati in area ZES Puglia"
               loading="lazy"
               className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
             />

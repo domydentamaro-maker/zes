@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, Linkedin, Phone, Mail } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Phone, Mail, ExternalLink } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -28,16 +28,16 @@ const Footer: React.FC = () => {
                <span className="text-2xl font-bold text-white tracking-tight">2D <span className="text-blue-500">Sviluppo Immobiliare</span></span>
             </div>
             <p className="text-sm leading-relaxed max-w-sm mb-6">
-              Siamo specializzati nello sviluppo immobiliare a 360 gradi. Dalla ricerca delle aree edificabili alla progettazione, fino alla consulenza strategica per l'accesso ai fondi ZES e PNRR. Costruiamo valore per il tuo business.
+              Siamo specializzati nello sviluppo immobiliare a 360 gradi. Dalla ricerca delle aree edificabili alla progettazione, fino alla consulenza strategica per l'accesso ai fondi ZES e PNRR in Puglia.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="p-2 bg-slate-900 rounded-full hover:bg-blue-600 hover:text-white transition-all">
+              <a href="#" aria-label="Seguici su Facebook" className="p-2 bg-slate-900 rounded-full hover:bg-blue-600 hover:text-white transition-all">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="p-2 bg-slate-900 rounded-full hover:bg-blue-600 hover:text-white transition-all">
+              <a href="#" aria-label="Seguici su Instagram" className="p-2 bg-slate-900 rounded-full hover:bg-blue-600 hover:text-white transition-all">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="p-2 bg-slate-900 rounded-full hover:bg-blue-600 hover:text-white transition-all">
+              <a href="#" aria-label="Seguici su Linkedin" className="p-2 bg-slate-900 rounded-full hover:bg-blue-600 hover:text-white transition-all">
                 <Linkedin size={20} />
               </a>
             </div>
@@ -64,19 +64,23 @@ const Footer: React.FC = () => {
 
           {/* Col 3: Link Utili */}
           <div>
-            <h4 className="text-white font-semibold mb-6 uppercase tracking-wider text-sm">Esplora</h4>
+            <h4 className="text-white font-semibold mb-6 uppercase tracking-wider text-sm">Navigazione</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="#" className="hover:text-blue-500 transition-colors">Chi Siamo</a></li>
+              <li>
+                <a href="https://2dsviluppoimmobiliare.it/" className="hover:text-blue-500 transition-colors flex items-center gap-2">
+                  Sito Principale <ExternalLink size={12} />
+                </a>
+              </li>
+              <li><a href="#about" onClick={(e) => handleScroll(e, '#about')} className="hover:text-blue-500 transition-colors">Chi Siamo</a></li>
               <li><a href="#focus" onClick={(e) => handleScroll(e, '#focus')} className="hover:text-blue-500 transition-colors">Terziario & ZES</a></li>
-              <li><a href="#steps" onClick={(e) => handleScroll(e, '#steps')} className="hover:text-blue-500 transition-colors">Come Operiamo</a></li>
-              <li><a href="#" className="hover:text-blue-500 transition-colors">Privacy Policy</a></li>
+              <li><a href="#projects" onClick={(e) => handleScroll(e, '#projects')} className="hover:text-blue-500 transition-colors">Portfolio</a></li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-slate-900 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
-          <p>&copy; {new Date().getFullYear()} 2D Sviluppo Immobiliare. P.IVA / C.F. inclusi nei termini legali.</p>
-          <p className="mt-2 md:mt-0">Realizzato con professionalità per il business.</p>
+          <p>&copy; {new Date().getFullYear()} 2D Sviluppo Immobiliare. Tutti i diritti riservati. P.IVA 08269550720</p>
+          <p className="mt-2 md:mt-0">Le agevolazioni ZES sono soggette a requisiti normativi. Consulenza professionale per investimenti garantiti.</p>
         </div>
       </div>
     </footer>

@@ -64,7 +64,7 @@ const TertiaryFocus: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {sectors.map((sector, index) => (
             <article key={index} className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 hover:shadow-xl hover:border-blue-300 transition-all duration-300 group">
-              <div className="bg-blue-50 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
+              <div className="bg-blue-50 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors" aria-hidden="true">
                 {React.cloneElement(sector.icon as React.ReactElement, { className: "w-8 h-8 text-blue-600 group-hover:text-white transition-colors" })}
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-3">{sector.title}</h3>
@@ -86,7 +86,7 @@ const TertiaryFocus: React.FC = () => {
             <a 
               href="#contact" 
               onClick={(e) => handleScroll(e, '#contact')}
-              aria-label="Contatta 2D Sviluppo Immobiliare per immobili in area ZES"
+              aria-label="Contatta subito 2D Sviluppo Immobiliare per immobili in area ZES"
               className="inline-block px-8 py-3 bg-white text-slate-900 font-bold rounded-lg hover:bg-blue-50 transition-colors whitespace-nowrap cursor-pointer"
             >
               Contattaci Subito

@@ -57,7 +57,7 @@ const ProjectsGallery: React.FC = () => {
                 <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/0 transition-all duration-500 z-10"></div>
                 <img 
                   src={project.image} 
-                  alt={`${project.title} - Progetto 2D Sviluppo Immobiliare a ${project.location}`}
+                  alt={`${project.title} - Sviluppo immobiliare ZES a ${project.location} curato da 2D Sviluppo Immobiliare`}
                   loading="lazy"
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
                 />
@@ -71,7 +71,7 @@ const ProjectsGallery: React.FC = () => {
               {/* Content */}
               <div>
                 <div className="flex items-center gap-2 text-slate-500 text-sm mb-2">
-                  <MapPin size={16} className="text-blue-500" />
+                  <MapPin size={16} className="text-blue-500" aria-hidden="true" />
                   <span>{project.location}</span>
                 </div>
                 <h3 className="text-2xl font-bold text-slate-900 mb-2 group-hover:text-blue-700 transition-colors flex items-center gap-2">
