@@ -21,10 +21,9 @@ const Hero: React.FC = () => {
     <section className="relative h-[650px] flex items-center justify-center overflow-hidden">
       {/* Background Image - Construction Site Context */}
       <div className="absolute inset-0 z-0">
-        {/* Nuova Immagine: Cantiere edile attivo con gru e struttura in elevazione. Inequivocabile. */}
         <img
           src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
-          alt="Cantiere Edile Sviluppo Immobiliare ZES Puglia"
+          alt="Cantiere edile attivo in Puglia - Sviluppo Immobiliare ZES"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-slate-900/60 mix-blend-multiply"></div>
@@ -44,6 +43,7 @@ const Hero: React.FC = () => {
           <a
             href="#contact"
             onClick={(e) => handleScroll(e, '#contact')}
+            aria-label="Contatta i nostri consulenti ZES"
             className="px-8 py-4 bg-white text-slate-900 rounded-sm font-bold hover:bg-slate-100 transition-colors flex items-center justify-center gap-2 uppercase tracking-wide text-sm cursor-pointer"
           >
             Parla con noi <ArrowRight size={18} />
@@ -51,6 +51,7 @@ const Hero: React.FC = () => {
           <a
             href="#focus"
             onClick={(e) => handleScroll(e, '#focus')}
+            aria-label="Scopri le opportunità del settore terziario in ZES"
             className="px-8 py-4 border border-white/30 bg-white/10 backdrop-blur-sm text-white rounded-sm font-bold hover:bg-white/20 transition-colors uppercase tracking-wide text-sm cursor-pointer"
           >
             Scopri le ZES

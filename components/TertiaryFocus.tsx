@@ -21,49 +21,49 @@ const TertiaryFocus: React.FC = () => {
     {
       icon: <Briefcase className="w-8 h-8 text-blue-600" />,
       title: "Uffici e Direzionale",
-      description: "Sviluppo di Headquarter aziendali e spazi coworking. Il credito d'imposta supporta l'acquisto di immobili strumentali e la modernizzazione delle infrastrutture digitali per le imprese di servizi."
+      description: "Sviluppo di Headquarter aziendali e spazi coworking. Il credito d'imposta supporta l'acquisto di immobili strumentali e la modernizzazione delle infrastrutture digitali."
     },
     {
       icon: <Palmtree className="w-8 h-8 text-blue-600" />,
       title: "Turismo e Hospitality",
-      description: "Il settore turistico è pienamente coinvolto. Riqualificazione di hotel, resort e strutture ricettive beneficiano delle agevolazioni ZES, fondamentali per il rilancio del territorio."
+      description: "Riqualificazione di hotel e resort. Il settore turistico beneficia ampiamente delle agevolazioni ZES per il rilancio del territorio pugliese."
     },
     {
       icon: <Truck className="w-8 h-8 text-blue-600" />,
       title: "Logistica Distributiva",
-      description: "Non solo porti: hub per l'e-commerce, magazzini di ultimo miglio e piattaforme del freddo. L'efficienza logistica è il cuore pulsante del terziario moderno."
+      description: "Hub per l'e-commerce e magazzini di ultimo miglio. L'efficienza logistica è fondamentale per il terziario moderno e competitivo."
     },
     {
       icon: <ShoppingBag className="w-8 h-8 text-blue-600" />,
       title: "Retail & Showroom",
-      description: "Grandi strutture di vendita e showroom aziendali. Le agevolazioni supportano l'investimento immobiliare per l'apertura di nuovi punti vendita e centri commerciali."
+      description: "Grandi strutture di vendita e showroom aziendali. Agevolazioni per l'investimento immobiliare in nuovi punti vendita strategici."
     },
     {
       icon: <Stethoscope className="w-8 h-8 text-blue-600" />,
       title: "Sanità Privata & RSA",
-      description: "Cliniche, laboratori di analisi e residenze per anziani. L'innovazione tecnologica e strutturale in ambito sanitario rientra nei piani di sviluppo agevolato."
+      description: "Cliniche, laboratori e residenze per anziani. L'innovazione tecnologica in ambito sanitario rientra nei piani di sviluppo agevolato."
     },
     {
       icon: <Building className="w-8 h-8 text-blue-600" />,
       title: "Recupero Industriale",
-      description: "Trasformazione di ex aree industriali in poli multifunzionali per servizi, cultura e start-up innovative, sfruttando la semplificazione amministrativa."
+      description: "Trasformazione di aree dismesse in poli multifunzionali, sfruttando la semplificazione amministrativa dell'Autorizzazione Unica."
     }
   ];
 
   return (
     <section id="focus" className="py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <header className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl font-bold text-slate-900 mb-4">Il Terziario a 360°</h2>
           <p className="text-slate-600 text-lg">
             Le opportunità della ZES Unica non si limitano all'industria. 
             Il nostro expertise copre l'intero spettro del settore terziario e dei servizi.
           </p>
-        </div>
+        </header>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {sectors.map((sector, index) => (
-            <div key={index} className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 hover:shadow-xl hover:border-blue-300 transition-all duration-300 group">
+            <article key={index} className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 hover:shadow-xl hover:border-blue-300 transition-all duration-300 group">
               <div className="bg-blue-50 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
                 {React.cloneElement(sector.icon as React.ReactElement, { className: "w-8 h-8 text-blue-600 group-hover:text-white transition-colors" })}
               </div>
@@ -71,7 +71,7 @@ const TertiaryFocus: React.FC = () => {
               <p className="text-slate-600 leading-relaxed text-sm">
                 {sector.description}
               </p>
-            </div>
+            </article>
           ))}
         </div>
 
@@ -86,6 +86,7 @@ const TertiaryFocus: React.FC = () => {
             <a 
               href="#contact" 
               onClick={(e) => handleScroll(e, '#contact')}
+              aria-label="Contatta 2D Sviluppo Immobiliare per immobili in area ZES"
               className="inline-block px-8 py-3 bg-white text-slate-900 font-bold rounded-lg hover:bg-blue-50 transition-colors whitespace-nowrap cursor-pointer"
             >
               Contattaci Subito

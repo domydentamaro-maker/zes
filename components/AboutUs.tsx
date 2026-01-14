@@ -10,10 +10,10 @@ const AboutUs: React.FC = () => {
           <div className="relative">
             <div className="absolute -top-4 -left-4 w-24 h-24 bg-blue-100 rounded-full z-0"></div>
             <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-slate-100 rounded-full z-0"></div>
-            {/* Nuova immagine: Team professionale in riunione strategica */}
             <img 
               src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" 
-              alt="Team 2D Sviluppo Immobiliare Consulting" 
+              alt="Team 2D Sviluppo Immobiliare Consulting - Esperti in consulenza strategica ZES Puglia" 
+              loading="lazy"
               className="relative z-10 rounded-2xl shadow-xl w-full object-cover h-[500px]"
             />
             <div className="absolute bottom-8 left-8 z-20 bg-white p-6 rounded-lg shadow-lg max-w-xs">
@@ -22,7 +22,7 @@ const AboutUs: React.FC = () => {
             </div>
           </div>
 
-          <div>
+          <article>
             <span className="text-blue-600 font-bold tracking-widest uppercase text-sm mb-2 block">Chi Siamo</span>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
               Oltre la semplice agenzia.<br/>
@@ -33,23 +33,23 @@ const AboutUs: React.FC = () => {
               2D Sviluppo Immobiliare nasce dalla volontà di colmare il vuoto tra l'intermediazione classica e la consulenza tecnica complessa. 
             </p>
             <p className="text-slate-600 mb-8 leading-relaxed">
-              Operiamo capillarmente in **tutta la Puglia**, da Foggia al Salento, analizzando la **trasformabilità** degli asset, la compatibilità con i bandi ZES e il potenziale ritorno sull'investimento. Il nostro team unisce competenze legali, tecniche e commerciali per servire investitori in ogni provincia.
+              Operiamo capillarmente in **tutta la Puglia**, da Foggia al Salento, analizzando la **trasformabilità** degli asset, la compatibilità con i bandi ZES e il potenziale ritorno sull'investimento. Il nostro team unisce competenze legali, tecniche e commerciali.
             </p>
 
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <div className="bg-blue-50 p-2 rounded-lg text-blue-600 shrink-0">
-                  <Users size={24} />
+                  <Users size={24} aria-hidden="true" />
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900">Network Regionale</h4>
-                  <p className="text-slate-500 text-sm">Relazioni consolidate con amministrazioni e proprietari terrieri a Bari, Foggia, Brindisi, Taranto, Lecce e BAT.</p>
+                  <p className="text-slate-500 text-sm">Relazioni consolidate a Bari, Foggia, Brindisi, Taranto, Lecce e BAT.</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
                 <div className="bg-blue-50 p-2 rounded-lg text-blue-600 shrink-0">
-                  <Target size={24} />
+                  <Target size={24} aria-hidden="true" />
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900">Focus ZES</h4>
@@ -59,7 +59,7 @@ const AboutUs: React.FC = () => {
 
                <div className="flex items-start gap-4">
                 <div className="bg-blue-50 p-2 rounded-lg text-blue-600 shrink-0">
-                  <Award size={24} />
+                  <Award size={24} aria-hidden="true" />
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900">Affidabilità</h4>
@@ -67,7 +67,7 @@ const AboutUs: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </article>
 
         </div>
       </div>
