@@ -57,7 +57,7 @@ const ProjectsGallery: React.FC = () => {
                 <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/0 transition-all duration-500 z-10"></div>
                 <img 
                   src={project.image} 
-                  alt={`${project.title} - Sviluppo immobiliare ZES a ${project.location} curato da 2D Sviluppo Immobiliare`}
+                  alt={`Esempio di progetto ${project.title} a ${project.location} sviluppato da 2D Sviluppo Immobiliare`}
                   loading="lazy"
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
                 />

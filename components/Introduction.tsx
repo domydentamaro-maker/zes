@@ -20,7 +20,7 @@ const Introduction: React.FC = () => {
                 In <strong>2D Sviluppo Immobiliare</strong>, interpretiamo la normativa ZES come una leva strategica per ogni tipologia di asset immobiliare, non solo industriale. Le agevolazioni si estendono a strutture ricettive, centri direzionali, logistica distributiva e poli tecnologici.
               </p>
               <p>
-                Il nostro approccio integra la competenza normativa con quella costruttiva. Affianchiamo investitori e imprenditori del terziario nell'individuare location strategiche per realizzare headquarter aziendali, hotel o piattaforme commerciali, massimizzando il ritorno sull'investimento grazie al credito d'imposta.
+                Il nostro approach integra la competenza normativa con quella costruttiva. Affianchiamo investitori e imprenditori del terziario nell'individuare location strategiche per realizzare headquarter aziendali, hotel o piattaforme commerciali, massimizzando il ritorno sull'investimento grazie al credito d'imposta.
               </p>
               <blockquote className="p-6 bg-slate-50 border-l-4 border-blue-900 italic text-slate-700 rounded-r-lg">
                 "Dallo sviluppo di poli uffici alla riqualificazione turistica: trasformiamo le agevolazioni in valore immobiliare."
@@ -33,7 +33,7 @@ const Introduction: React.FC = () => {
             <div className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden shadow-2xl">
              <img
               src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
-              alt="Uffici moderni e spazi per il business nel terziario avanzato sviluppati in area ZES Puglia"
+              alt="Uffici moderni e spazi direzionali sviluppati da 2D Sviluppo Immobiliare in Puglia"
               loading="lazy"
               className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
             />

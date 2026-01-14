@@ -31,13 +31,13 @@ const Footer: React.FC = () => {
               Siamo specializzati nello sviluppo immobiliare a 360 gradi. Dalla ricerca delle aree edificabili alla progettazione, fino alla consulenza strategica per l'accesso ai fondi ZES e PNRR in Puglia.
             </p>
             <div className="flex space-x-4">
-              <a href="#" aria-label="Seguici su Facebook" className="p-2 bg-slate-900 rounded-full hover:bg-blue-600 hover:text-white transition-all">
+              <a href="#" aria-label="Seguici su Facebook - 2D Sviluppo Immobiliare" className="p-2 bg-slate-900 rounded-full hover:bg-blue-600 hover:text-white transition-all">
                 <Facebook size={20} />
               </a>
-              <a href="#" aria-label="Seguici su Instagram" className="p-2 bg-slate-900 rounded-full hover:bg-blue-600 hover:text-white transition-all">
+              <a href="#" aria-label="Seguici su Instagram - 2D Sviluppo Immobiliare" className="p-2 bg-slate-900 rounded-full hover:bg-blue-600 hover:text-white transition-all">
                 <Instagram size={20} />
               </a>
-              <a href="#" aria-label="Seguici su Linkedin" className="p-2 bg-slate-900 rounded-full hover:bg-blue-600 hover:text-white transition-all">
+              <a href="#" aria-label="Seguici su Linkedin - 2D Sviluppo Immobiliare" className="p-2 bg-slate-900 rounded-full hover:bg-blue-600 hover:text-white transition-all">
                 <Linkedin size={20} />
               </a>
             </div>
@@ -49,13 +49,13 @@ const Footer: React.FC = () => {
             <ul className="space-y-4 text-sm">
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-blue-500" />
-                <a href="mailto:info@2dsviluppoimmobiliare.it" className="hover:text-white transition-colors">
+                <a href="mailto:info@2dsviluppoimmobiliare.it" aria-label="Invia una mail a 2D Sviluppo Immobiliare" className="hover:text-white transition-colors">
                   info@2dsviluppoimmobiliare.it
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={16} className="text-blue-500" />
-                <a href="tel:+393408039322" className="hover:text-white transition-colors">
+                <a href="tel:+393408039322" aria-label="Chiama il team di 2D Sviluppo Immobiliare" className="hover:text-white transition-colors">
                   340 803 9322
                 </a>
               </li>
@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
             <h4 className="text-white font-semibold mb-6 uppercase tracking-wider text-sm">Navigazione</h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="https://2dsviluppoimmobiliare.it/" className="hover:text-blue-500 transition-colors flex items-center gap-2">
+                <a href="https://2dsviluppoimmobiliare.it/" aria-label="Torna al sito istituzionale principale" className="hover:text-blue-500 transition-colors flex items-center gap-2">
                   Sito Principale <ExternalLink size={12} />
                 </a>
               </li>
@@ -80,7 +80,7 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-slate-900 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
           <p>&copy; {new Date().getFullYear()} 2D Sviluppo Immobiliare. Tutti i diritti riservati. P.IVA 08269550720</p>
-          <p className="mt-2 md:mt-0">Le agevolazioni ZES sono soggette a requisiti normativi. Consulenza professionale per investimenti garantiti.</p>
+          <p className="mt-2 md:mt-0">Le agevolazioni ZES sono soggette a requisiti normativi. Consulenza professionale per investimenti immobiliari garantiti.</p>
         </div>
       </div>
     </footer>
